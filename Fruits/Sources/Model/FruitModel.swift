@@ -1,6 +1,6 @@
 //
 //  FruitModel.swift
-//  Fructus
+//  Fruits
 //
 //  Created by Anton Sokolchenko on September 7.
 //
@@ -17,11 +17,11 @@ struct Fruit: Identifiable, Decodable {
 	// the property is not present in the gist, but it is very rare if 'id' is not present
 	@DefaultCodable<DefaultIdentifier>
 	var id: String = DefaultIdentifier.defaultValue
-    
+	
 	var name: String
 	
 	// it is URL string
-    var image: String
+	var image: String
 	var price: Int
 	var weight: Float?
 }

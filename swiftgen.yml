@@ -1,21 +1,21 @@
-input_dir: Fructus
-output_dir: Fructus/Sources/
+input_dir: Fruits
+output_dir: Fruits/Sources/
 xcassets:
   - inputs: Assets.xcassets
     outputs:
-      - templatePath: Fructus/Tools/assets-swift4.stencil
+      - templatePath: Fruits/Tools/assets-swift4.stencil
         output: Assets-Constants.swift
         params:
           enumName: Assets
 ib:
   inputs: .
   outputs:
-    - templatePath: Fructus/Tools/scenes-swift4.stencil
+    - templatePath: Fruits/Tools/scenes-swift4.stencil
       output: Scenes.swift
-    - templatePath: Fructus/Tools/segues-swift4.stencil
+    - templatePath: Fruits/Tools/segues-swift4.stencil
       output: Segues.swift
 strings:
   inputs: Localization/Localizable.strings
   outputs:
-    templatePath: Fructus/Tools/structured-swift4.stencil
+    templatePath: Fruits/Tools/structured-swift4.stencil
     output: Strings.swift    

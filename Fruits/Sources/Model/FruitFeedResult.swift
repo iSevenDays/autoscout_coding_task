@@ -1,6 +1,6 @@
 //
 //  FruitFeedResult.swift
-//  Fructus
+//  Fruits
 //
 //  Created by Anton Sokolchenko on 07.09.2021.
 //

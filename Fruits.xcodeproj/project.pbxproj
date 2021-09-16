@@ -23,7 +23,7 @@
 		699FF9D326E77A9900103607 /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D226E77A9900103607 /* FruitViewModel.swift */; };
 		699FF9D526E77C5200103607 /* ImageWithURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D426E77C5200103607 /* ImageWithURL.swift */; };
 		699FF9D826E7827C00103607 /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D726E7827C00103607 /* DefaultCodable.swift */; };
-		AD33607225C3875D00A8A2D6 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD33607125C3875D00A8A2D6 /* SettingsRowView.swift */; };
+		69B5605B26F354CC00721D14 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5605926F354A400721D14 /* SettingsRowView.swift */; };
 		AD3BD02625C0B9A100B69D41 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02525C0B9A100B69D41 /* FruitRowView.swift */; };
 		AD3BD02925C0C40F00B69D41 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */; };
 		AD3BD02C25C0C8D100B69D41 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02B25C0C8D100B69D41 /* FruitHeaderView.swift */; };
@@ -55,7 +55,7 @@
 		699FF9D226E77A9900103607 /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		699FF9D426E77C5200103607 /* ImageWithURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithURL.swift; sourceTree = "<group>"; };
 		699FF9D726E7827C00103607 /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
-		AD33607125C3875D00A8A2D6 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsRowView.swift; path = Fructus/Sources/App/SettingsRowView.swift; sourceTree = SOURCE_ROOT; };
+		69B5605926F354A400721D14 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		AD3BD02525C0B9A100B69D41 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		AD3BD02B25C0C8D100B69D41 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
@@ -158,10 +158,8 @@
 		ADC39E0C25C073520070DFAD /* App */ = {
 			isa = PBXGroup;
 			children = (
-				ADDFC61025BFA0CB00014D0A /* FructusApp.swift */,
 				ADDFC61225BFA0CB00014D0A /* ContentView.swift */,
-				AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */,
-				AD92A56325C1080D004B15E6 /* SettingsView.swift */,
+				ADDFC61025BFA0CB00014D0A /* FructusApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -169,13 +167,15 @@
 		ADC39E0E25C0737E0070DFAD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD33607125C3875D00A8A2D6 /* SettingsRowView.swift */,
+				69B5605926F354A400721D14 /* SettingsRowView.swift */,
 				AD3BD02525C0B9A100B69D41 /* FruitRowView.swift */,
 				AD3BD02B25C0C8D100B69D41 /* FruitHeaderView.swift */,
 				AD3BD02E25C0CC4000B69D41 /* SourceLinkView.swift */,
 				AD90B99825C223D100703D92 /* SettingsLabelView.swift */,
 				699FF9C326E76F3F00103607 /* FruitInfoView.swift */,
 				699FF9D426E77C5200103607 /* ImageWithURL.swift */,
+				AD92A56325C1080D004B15E6 /* SettingsView.swift */,
+				AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 		ADDFC60425BFA0CB00014D0A = {
 			isa = PBXGroup;
 			children = (
-				ADDFC60F25BFA0CB00014D0A /* Fructus */,
+				ADDFC60F25BFA0CB00014D0A /* Fruits */,
 				ADDFC60E25BFA0CB00014D0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -196,7 +196,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADDFC60F25BFA0CB00014D0A /* Fructus */ = {
+		ADDFC60F25BFA0CB00014D0A /* Fruits */ = {
 			isa = PBXGroup;
 			children = (
 				699FF9B326E7618700103607 /* Localization */,
@@ -205,7 +205,7 @@
 				ADDFC61925BFA0CD00014D0A /* Info.plist */,
 				ADDFC61625BFA0CD00014D0A /* Preview Content */,
 			);
-			path = Fructus;
+			path = Fruits;
 			sourceTree = "<group>";
 		};
 		ADDFC61625BFA0CD00014D0A /* Preview Content */ = {
@@ -315,8 +315,8 @@
 				AD3BD02F25C0CC4000B69D41 /* SourceLinkView.swift in Sources */,
 				699FF9BE26E7668700103607 /* Scenes.swift in Sources */,
 				699FF9C026E7668700103607 /* Segues.swift in Sources */,
-				AD33607225C3875D00A8A2D6 /* SettingsRowView.swift in Sources */,
 				AD3BD02625C0B9A100B69D41 /* FruitRowView.swift in Sources */,
+				69B5605B26F354CC00721D14 /* SettingsRowView.swift in Sources */,
 				699FF9C426E76F3F00103607 /* FruitInfoView.swift in Sources */,
 				699FF9C926E7755B00103607 /* APIError.swift in Sources */,
 				AD3BD02925C0C40F00B69D41 /* FruitDetailView.swift in Sources */,
@@ -473,16 +473,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fructus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LE4543WR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fructus/Info.plist;
+				INFOPLIST_FILE = Fruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fruits.Fructus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fruits.Fruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,16 +495,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fructus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LE4543WR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fructus/Info.plist;
+				INFOPLIST_FILE = Fruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fruits.Fructus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fruits.Fruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

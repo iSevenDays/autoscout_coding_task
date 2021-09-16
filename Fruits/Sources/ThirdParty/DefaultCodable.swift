@@ -44,7 +44,7 @@ extension DefaultCodable: Hashable where Default.DefaultValue: Hashable { }
 public protocol BoolCodableStrategy: DefaultCodableStrategy where DefaultValue == Bool {}
 
 public extension KeyedDecodingContainer {
-
+	
 	/// Default implementation of decoding a DefaultCodable
 	///
 	/// Decodes successfully if key is available if not fallsback to the default value provided.
@@ -55,7 +55,7 @@ public extension KeyedDecodingContainer {
 			return DefaultCodable(wrappedValue: P.defaultValue)
 		}
 	}
-
+	
 	/// Default implementation of decoding a `DefaultCodable` where its strategy is a `BoolCodableStrategy`.
 	///
 	/// Tries to initially Decode a `Bool` if available, otherwise tries to decode it as an `Int` or `String`
@@ -68,14 +68,14 @@ public extension KeyedDecodingContainer {
 			return DefaultCodable(wrappedValue: value)
 		} catch let error {
 			guard let decodingError = error as? DecodingError,
-				case .typeMismatch = decodingError else {
-					return DefaultCodable(wrappedValue: P.defaultValue)
+						case .typeMismatch = decodingError else {
+				return DefaultCodable(wrappedValue: P.defaultValue)
 			}
 			if let intValue = try? decodeIfPresent(Int.self, forKey: key),
-				let bool = Bool(exactly: NSNumber(value: intValue)) {
+				 let bool = Bool(exactly: NSNumber(value: intValue)) {
 				return DefaultCodable(wrappedValue: bool)
 			} else if let stringValue = try? decodeIfPresent(String.self, forKey: key),
-				let bool = Bool(stringValue) {
+								let bool = Bool(stringValue) {
 				return DefaultCodable(wrappedValue: bool)
 			} else {
 				return DefaultCodable(wrappedValue: P.defaultValue)

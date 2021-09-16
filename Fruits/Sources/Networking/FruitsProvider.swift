@@ -1,6 +1,6 @@
 //
 //  MoviesProvider.swift
-//  Fructus
+//  Fruits
 //
 //  Created by Anton Sokolchenko on 07.09.2021.
 //
@@ -20,7 +20,7 @@ final class FruitsProvider: ObservableObject {
 	
 	// MARK:- Publishers
 	@Published var fruits: [FruitViewModel] = []
-
+	
 	// MARK:- Private properties
 	private let client = FruitClient()
 	
