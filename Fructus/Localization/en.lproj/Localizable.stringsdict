@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>meal.count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@meal_count@</string>
+		<key>meal_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>Meal</string>
+			<key>other</key>
+			<string>Meals</string>
+		</dict>
+	</dict>
+	<key>beverage.count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@beverage_count@</string>
+		<key>beverage_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>Beverage</string>
+			<key>other</key>
+			<string>Beverages</string>
+		</dict>
+	</dict>
+	<key>unit.count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@unit_count@</string>
+		<key>unit_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>Unit</string>
+			<key>other</key>
+			<string>Units</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

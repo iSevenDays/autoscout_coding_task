@@ -1,0 +1,10 @@
+/*
+  Localizable.strings
+  Fructus
+
+  Created by Anton Sokolchenko on 07.09.2021.
+  Copyright © 2021 Anton Sokolchenko. All rights reserved.
+*/
+
+"fruit.price" = "Price: %d";
+"fruit.weight" = "Weight: %0.1f";
