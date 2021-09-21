@@ -17,8 +17,8 @@ Install SwiftGen (optional).
 You can use local fruits or download them from Github(a default option).
 
 ```
-// ContentView.swift
-@State var useLocalData: Bool = false
+// ContentViewBusinessLogic.swift
+private var useLocalData = false
 ```
 
 ## Features
