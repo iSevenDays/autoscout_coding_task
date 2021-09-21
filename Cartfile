@@ -1,0 +1,4 @@
+github "realm/realm-cocoa" ~> 5.5
+github "CocoaLumberjack/CocoaLumberjack" ~> 3.6
+github "isevendays/MulticastDelegate"
+github "BoltsFramework/Bolts-Swift" ~> 1.5.0

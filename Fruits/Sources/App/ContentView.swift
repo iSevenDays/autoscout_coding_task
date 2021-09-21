@@ -14,30 +14,22 @@ struct ContentView: View {
 	// MARK: - PROPERTIES
 	
 	@State private var isShowingSettings: Bool = false
-	@State var useLocalData: Bool = false
 	
-	@StateObject private var fruitProvider = FruitsProvider()
-	
-	var fruits: [FruitViewModel] {
-		if useLocalData {
-			return fruitsDataViewModels
-		}
-		return fruitProvider.fruits
-	}
+	@ObservedObject var contentViewData: ContentViewData
 	
 	// MARK: - BODY
 	
 	var body: some View {
 		NavigationView {
 			List {
-				ForEach(fruits) { item in
+				ForEach(contentViewData.fruits) { item in
 					NavigationLink(destination: FruitDetailView(fruit: item)) {
 						FruitRowView(fruit: item)
 							.padding(.vertical, 4)
 					}
 				}
 			}
-			.navigationTitle("Fruits")
+			.navigationTitle(L10n.Main.View.Navigation.title)
 			.navigationBarItems(trailing: Button(action: {
 				isShowingSettings = true
 			}) {
@@ -55,8 +47,13 @@ struct ContentView: View {
 // MARK: - PREVIEW
 
 struct ContentView_Previews: PreviewProvider {
+	static var previewData: ContentViewData {
+		let data = ContentViewData()
+		data.fruits = fruitsData.compactMap({FruitViewModel(fruit: $0)})
+		return data
+	}
 	static var previews: some View {
-		ContentView(useLocalData: true)
+		ContentView(contentViewData: self.previewData)
 			.previewDevice("iPhone 11 Pro")
 	}
 }

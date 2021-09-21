@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Feed Result model is used by FruitClient
 struct FruitFeedResult: Decodable {
 	let fruits: [Fruit]
 }

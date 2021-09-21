@@ -22,6 +22,15 @@ internal enum L10n {
       return L10n.tr("Localizable", "fruit.weight", p1)
     }
   }
+
+  internal enum Main {
+    internal enum View {
+      internal enum Navigation {
+        /// Fruits
+        internal static let title = L10n.tr("Localizable", "main.view.navigation.title")
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

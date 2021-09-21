@@ -8,3 +8,4 @@
 
 "fruit.price" = "Price: %d";
 "fruit.weight" = "Weight: %0.1f";
+"main.view.navigation.title" = "Fruits";

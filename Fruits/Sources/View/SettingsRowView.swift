@@ -2,7 +2,7 @@
 //  SettingsRowView.swift
 //  Fructus
 //
-//  Created by Anton Sokolchenko on 07.09.2021er 7, 2021.
+//  Created by Anton Sokolchenko on 07.09.2021
 //
 
 import SwiftUI

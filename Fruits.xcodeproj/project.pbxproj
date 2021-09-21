@@ -3,10 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698B000626F8B1820005E852 /* InjectedSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000026F8B1820005E852 /* InjectedSafe.swift */; };
+		698B000726F8B1820005E852 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000126F8B1820005E852 /* Injected.swift */; };
+		698B000826F8B1820005E852 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000226F8B1820005E852 /* Dependencies.swift */; };
+		698B000926F8B1820005E852 /* DependenciesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000326F8B1820005E852 /* DependenciesBuilder.swift */; };
+		698B000A26F8B1820005E852 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000426F8B1820005E852 /* Dependency.swift */; };
+		698B000B26F8B1820005E852 /* InjectedAlways.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000526F8B1820005E852 /* InjectedAlways.swift */; };
+		698B000D26F8B2AA0005E852 /* RealmSharedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000C26F8B2AA0005E852 /* RealmSharedCache.swift */; };
+		698B000F26F8B7910005E852 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698B000E26F8B7910005E852 /* LogManager.swift */; };
+		698BFFBD26F89C1E0005E852 /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFBB26F89C1E0005E852 /* WriteTransaction.swift */; };
+		698BFFBE26F89C1E0005E852 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFBC26F89C1E0005E852 /* Container.swift */; };
+		698BFFCC26F8A20E0005E852 /* CocoaLumberjack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC326F8A1CD0005E852 /* CocoaLumberjack.xcframework */; };
+		698BFFCD26F8A20E0005E852 /* CocoaLumberjack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC326F8A1CD0005E852 /* CocoaLumberjack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFCF26F8A20F0005E852 /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC426F8A1CD0005E852 /* CocoaLumberjackSwift.xcframework */; };
+		698BFFD026F8A2100005E852 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC426F8A1CD0005E852 /* CocoaLumberjackSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFD126F8A2110005E852 /* MulticastDelegateSwift_iOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC126F8A1CD0005E852 /* MulticastDelegateSwift_iOS.xcframework */; };
+		698BFFD226F8A2110005E852 /* MulticastDelegateSwift_iOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC126F8A1CD0005E852 /* MulticastDelegateSwift_iOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFD326F8A2120005E852 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC026F8A1CD0005E852 /* Realm.xcframework */; };
+		698BFFD426F8A2120005E852 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC026F8A1CD0005E852 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFD526F8A2130005E852 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC226F8A1CD0005E852 /* RealmSwift.xcframework */; };
+		698BFFD626F8A2130005E852 /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFC226F8A1CD0005E852 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFDB26F8A35E0005E852 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFDA26F8A35E0005E852 /* Persistable.swift */; };
+		698BFFDE26F8A3890005E852 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFDD26F8A3890005E852 /* TypeAliases.swift */; };
+		698BFFE326F8A4B10005E852 /* FruitObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFE226F8A4B10005E852 /* FruitObject.swift */; };
+		698BFFE626F8A75E0005E852 /* FruitCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFE526F8A75E0005E852 /* FruitCache.swift */; };
+		698BFFE926F8A8A50005E852 /* QueueExecutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFE826F8A8A50005E852 /* QueueExecutable.swift */; };
+		698BFFEC26F8A9100005E852 /* BoltsSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 698BFFEA26F8A9100005E852 /* BoltsSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		698BFFF026F8A9BA0005E852 /* QueueExecutableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFEF26F8A9BA0005E852 /* QueueExecutableError.swift */; };
+		698BFFF326F8AB360005E852 /* FruitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFF226F8AB360005E852 /* FruitManager.swift */; };
+		698BFFF526F8AD2D0005E852 /* FruitManager+Write.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFF426F8AD2D0005E852 /* FruitManager+Write.swift */; };
+		698BFFF726F8AD6B0005E852 /* FruitManager+Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFF626F8AD6B0005E852 /* FruitManager+Read.swift */; };
+		698BFFFB26F8B05A0005E852 /* ContentViewBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFFA26F8B05A0005E852 /* ContentViewBusinessLogic.swift */; };
+		698BFFFE26F8B0B20005E852 /* ContentViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BFFFD26F8B0B20005E852 /* ContentViewData.swift */; };
 		699FF9B726E7618700103607 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 699FF9B426E7618700103607 /* Localizable.stringsdict */; };
 		699FF9B826E7618700103607 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 699FF9B626E7618700103607 /* Localizable.strings */; };
 		699FF9BE26E7668700103607 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9BA26E7668700103607 /* Scenes.swift */; };
@@ -22,15 +54,17 @@
 		699FF9D126E7779300103607 /* FruitsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D026E7779300103607 /* FruitsProvider.swift */; };
 		699FF9D326E77A9900103607 /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D226E77A9900103607 /* FruitViewModel.swift */; };
 		699FF9D526E77C5200103607 /* ImageWithURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D426E77C5200103607 /* ImageWithURL.swift */; };
-		699FF9D826E7827C00103607 /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699FF9D726E7827C00103607 /* DefaultCodable.swift */; };
 		69B5605B26F354CC00721D14 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5605926F354A400721D14 /* SettingsRowView.swift */; };
+		69B99F4626F9C330004E91A1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B99F4526F9C330004E91A1 /* libc++.tbd */; };
+		69B99F4826F9C340004E91A1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B99F4726F9C340004E91A1 /* libz.tbd */; };
+		69B99F4A26F9C8EC004E91A1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B99F4926F9C8EC004E91A1 /* Observable.swift */; };
 		AD3BD02625C0B9A100B69D41 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02525C0B9A100B69D41 /* FruitRowView.swift */; };
 		AD3BD02925C0C40F00B69D41 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */; };
 		AD3BD02C25C0C8D100B69D41 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02B25C0C8D100B69D41 /* FruitHeaderView.swift */; };
 		AD3BD02F25C0CC4000B69D41 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3BD02E25C0CC4000B69D41 /* SourceLinkView.swift */; };
 		AD90B99925C223D100703D92 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90B99825C223D100703D92 /* SettingsLabelView.swift */; };
 		AD92A56425C1080D004B15E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92A56325C1080D004B15E6 /* SettingsView.swift */; };
-		ADA3CE3D25C0910500D54A44 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3CE3C25C0910500D54A44 /* FruitModel.swift */; };
+		ADA3CE3D25C0910500D54A44 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3CE3C25C0910500D54A44 /* Fruit.swift */; };
 		ADA3CE4225C091E600D54A44 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3CE4125C091E600D54A44 /* FruitData.swift */; };
 		ADDFC61125BFA0CB00014D0A /* FructusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDFC61025BFA0CB00014D0A /* FructusApp.swift */; };
 		ADDFC61325BFA0CB00014D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDFC61225BFA0CB00014D0A /* ContentView.swift */; };
@@ -38,7 +72,53 @@
 		ADDFC61825BFA0CD00014D0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDFC61725BFA0CD00014D0A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		698BFFCE26F8A20E0005E852 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				698BFFD226F8A2110005E852 /* MulticastDelegateSwift_iOS.xcframework in Embed Frameworks */,
+				698BFFD426F8A2120005E852 /* Realm.xcframework in Embed Frameworks */,
+				698BFFD626F8A2130005E852 /* RealmSwift.xcframework in Embed Frameworks */,
+				698BFFD026F8A2100005E852 /* CocoaLumberjackSwift.xcframework in Embed Frameworks */,
+				698BFFEC26F8A9100005E852 /* BoltsSwift.xcframework in Embed Frameworks */,
+				698BFFCD26F8A20E0005E852 /* CocoaLumberjack.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		698B000026F8B1820005E852 /* InjectedSafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedSafe.swift; sourceTree = "<group>"; };
+		698B000126F8B1820005E852 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		698B000226F8B1820005E852 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		698B000326F8B1820005E852 /* DependenciesBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenciesBuilder.swift; sourceTree = "<group>"; };
+		698B000426F8B1820005E852 /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		698B000526F8B1820005E852 /* InjectedAlways.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedAlways.swift; sourceTree = "<group>"; };
+		698B000C26F8B2AA0005E852 /* RealmSharedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSharedCache.swift; sourceTree = "<group>"; };
+		698B000E26F8B7910005E852 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		698BFFBB26F89C1E0005E852 /* WriteTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteTransaction.swift; sourceTree = "<group>"; };
+		698BFFBC26F89C1E0005E852 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		698BFFC026F8A1CD0005E852 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Carthage/Build/Realm.xcframework; sourceTree = "<group>"; };
+		698BFFC126F8A1CD0005E852 /* MulticastDelegateSwift_iOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MulticastDelegateSwift_iOS.xcframework; path = Carthage/Build/MulticastDelegateSwift_iOS.xcframework; sourceTree = "<group>"; };
+		698BFFC226F8A1CD0005E852 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Carthage/Build/RealmSwift.xcframework; sourceTree = "<group>"; };
+		698BFFC326F8A1CD0005E852 /* CocoaLumberjack.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjack.xcframework; path = Carthage/Build/CocoaLumberjack.xcframework; sourceTree = "<group>"; };
+		698BFFC426F8A1CD0005E852 /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = Carthage/Build/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
+		698BFFDA26F8A35E0005E852 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		698BFFDD26F8A3890005E852 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		698BFFE226F8A4B10005E852 /* FruitObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitObject.swift; sourceTree = "<group>"; };
+		698BFFE526F8A75E0005E852 /* FruitCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCache.swift; sourceTree = "<group>"; };
+		698BFFE826F8A8A50005E852 /* QueueExecutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueExecutable.swift; sourceTree = "<group>"; };
+		698BFFEA26F8A9100005E852 /* BoltsSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BoltsSwift.xcframework; path = Carthage/Build/BoltsSwift.xcframework; sourceTree = "<group>"; };
+		698BFFEF26F8A9BA0005E852 /* QueueExecutableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueExecutableError.swift; sourceTree = "<group>"; };
+		698BFFF226F8AB360005E852 /* FruitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitManager.swift; sourceTree = "<group>"; };
+		698BFFF426F8AD2D0005E852 /* FruitManager+Write.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitManager+Write.swift"; sourceTree = "<group>"; };
+		698BFFF626F8AD6B0005E852 /* FruitManager+Read.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitManager+Read.swift"; sourceTree = "<group>"; };
+		698BFFFA26F8B05A0005E852 /* ContentViewBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewBusinessLogic.swift; sourceTree = "<group>"; };
+		698BFFFD26F8B0B20005E852 /* ContentViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewData.swift; sourceTree = "<group>"; };
 		699FF9B526E7618700103607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		699FF9B626E7618700103607 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		699FF9BA26E7668700103607 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
@@ -54,15 +134,17 @@
 		699FF9D026E7779300103607 /* FruitsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsProvider.swift; sourceTree = "<group>"; };
 		699FF9D226E77A9900103607 /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
 		699FF9D426E77C5200103607 /* ImageWithURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithURL.swift; sourceTree = "<group>"; };
-		699FF9D726E7827C00103607 /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
 		69B5605926F354A400721D14 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		69B99F4526F9C330004E91A1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		69B99F4726F9C340004E91A1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		69B99F4926F9C8EC004E91A1 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		AD3BD02525C0B9A100B69D41 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		AD3BD02825C0C40F00B69D41 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		AD3BD02B25C0C8D100B69D41 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		AD3BD02E25C0CC4000B69D41 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		AD90B99825C223D100703D92 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		AD92A56325C1080D004B15E6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		ADA3CE3C25C0910500D54A44 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		ADA3CE3C25C0910500D54A44 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		ADA3CE4125C091E600D54A44 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		ADDFC60D25BFA0CB00014D0A /* Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDFC61025BFA0CB00014D0A /* FructusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusApp.swift; sourceTree = "<group>"; };
@@ -77,6 +159,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B99F4826F9C340004E91A1 /* libz.tbd in Frameworks */,
+				69B99F4626F9C330004E91A1 /* libc++.tbd in Frameworks */,
+				698BFFCC26F8A20E0005E852 /* CocoaLumberjack.xcframework in Frameworks */,
+				698BFFCF26F8A20F0005E852 /* CocoaLumberjackSwift.xcframework in Frameworks */,
+				698BFFD526F8A2130005E852 /* RealmSwift.xcframework in Frameworks */,
+				698BFFD126F8A2110005E852 /* MulticastDelegateSwift_iOS.xcframework in Frameworks */,
+				698BFFD326F8A2120005E852 /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +175,9 @@
 		6946CF9A26E7604800D2AB13 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				699FF9D626E7827200103607 /* ThirdParty */,
+				698BFFE426F8A7580005E852 /* Logic */,
+				698BFFDC26F8A3820005E852 /* Helpers */,
+				698BFFD926F8A3530005E852 /* Protocols */,
 				699FF9C526E7744400103607 /* Networking */,
 				699FF9C226E7668D00103607 /* AutoGenerated */,
 				ADA3CE3B25C090E900D54A44 /* Model */,
@@ -95,6 +186,143 @@
 				ADC39E0C25C073520070DFAD /* App */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		698BFFBA26F89C100005E852 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFBC26F89C1E0005E852 /* Container.swift */,
+				698BFFBB26F89C1E0005E852 /* WriteTransaction.swift */,
+				698B000C26F8B2AA0005E852 /* RealmSharedCache.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		698BFFBF26F8A1CD0005E852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69B99F4726F9C340004E91A1 /* libz.tbd */,
+				69B99F4526F9C330004E91A1 /* libc++.tbd */,
+				698BFFEA26F8A9100005E852 /* BoltsSwift.xcframework */,
+				698BFFC326F8A1CD0005E852 /* CocoaLumberjack.xcframework */,
+				698BFFC426F8A1CD0005E852 /* CocoaLumberjackSwift.xcframework */,
+				698BFFC126F8A1CD0005E852 /* MulticastDelegateSwift_iOS.xcframework */,
+				698BFFC026F8A1CD0005E852 /* Realm.xcframework */,
+				698BFFC226F8A1CD0005E852 /* RealmSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		698BFFD926F8A3530005E852 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				69B99F4926F9C8EC004E91A1 /* Observable.swift */,
+				698BFFDA26F8A35E0005E852 /* Persistable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		698BFFDC26F8A3820005E852 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFE726F8A8A00005E852 /* QueueExecutable */,
+				698BFFDD26F8A3890005E852 /* TypeAliases.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		698BFFDF26F8A4660005E852 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFE126F8A4710005E852 /* ManagedObjects */,
+				698BFFE026F8A46B0005E852 /* Structs */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+		698BFFE026F8A46B0005E852 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3CE3C25C0910500D54A44 /* Fruit.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		698BFFE126F8A4710005E852 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFE226F8A4B10005E852 /* FruitObject.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		698BFFE426F8A7580005E852 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFF926F8AECE0005E852 /* Services */,
+				698BFFF826F8AE8D0005E852 /* BusinessLogic */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		698BFFE726F8A8A00005E852 /* QueueExecutable */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFE826F8A8A50005E852 /* QueueExecutable.swift */,
+				698BFFEF26F8A9BA0005E852 /* QueueExecutableError.swift */,
+			);
+			path = QueueExecutable;
+			sourceTree = "<group>";
+		};
+		698BFFF126F8AB300005E852 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFE526F8A75E0005E852 /* FruitCache.swift */,
+				698BFFF226F8AB360005E852 /* FruitManager.swift */,
+				698BFFF426F8AD2D0005E852 /* FruitManager+Write.swift */,
+				698BFFF626F8AD6B0005E852 /* FruitManager+Read.swift */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+		698BFFF826F8AE8D0005E852 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFFA26F8B05A0005E852 /* ContentViewBusinessLogic.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		698BFFF926F8AECE0005E852 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFBA26F89C100005E852 /* Database */,
+				698BFFFF26F8B1820005E852 /* DependencyController */,
+				698BFFF126F8AB300005E852 /* Fruit */,
+				698B000E26F8B7910005E852 /* LogManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		698BFFFC26F8B0A90005E852 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				698BFFFD26F8B0B20005E852 /* ContentViewData.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		698BFFFF26F8B1820005E852 /* DependencyController */ = {
+			isa = PBXGroup;
+			children = (
+				698B000026F8B1820005E852 /* InjectedSafe.swift */,
+				698B000126F8B1820005E852 /* Injected.swift */,
+				698B000226F8B1820005E852 /* Dependencies.swift */,
+				698B000326F8B1820005E852 /* DependenciesBuilder.swift */,
+				698B000426F8B1820005E852 /* Dependency.swift */,
+				698B000526F8B1820005E852 /* InjectedAlways.swift */,
+			);
+			path = DependencyController;
 			sourceTree = "<group>";
 		};
 		699FF9B326E7618700103607 /* Localization */ = {
@@ -129,18 +357,10 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		699FF9D626E7827200103607 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				699FF9D726E7827C00103607 /* DefaultCodable.swift */,
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
 		ADA3CE3B25C090E900D54A44 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ADA3CE3C25C0910500D54A44 /* FruitModel.swift */,
+				698BFFDF26F8A4660005E852 /* Fruit */,
 				699FF9CA26E7757D00103607 /* FruitFeedResult.swift */,
 				699FF9D226E77A9900103607 /* FruitViewModel.swift */,
 			);
@@ -150,6 +370,7 @@
 		ADA3CE4025C091D300D54A44 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				698BFFFC26F8B0A90005E852 /* SwiftUI */,
 				ADA3CE4125C091E600D54A44 /* FruitData.swift */,
 			);
 			path = Data;
@@ -185,6 +406,7 @@
 			children = (
 				ADDFC60F25BFA0CB00014D0A /* Fruits */,
 				ADDFC60E25BFA0CB00014D0A /* Products */,
+				698BFFBF26F8A1CD0005E852 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +449,9 @@
 				ADDFC60925BFA0CB00014D0A /* Sources */,
 				ADDFC60A25BFA0CB00014D0A /* Frameworks */,
 				ADDFC60B25BFA0CB00014D0A /* Resources */,
+				698BFFCE26F8A20E0005E852 /* Embed Frameworks */,
+				698BFFD726F8A2800005E852 /* ShellScript */,
+				698BFFD826F8A2A10005E852 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,6 +509,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		698BFFD726F8A2800005E852 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The script will look through your built application’s Frameworks folder and make sure only the architectures you’re building for are present in each Framework.\n# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\n    FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n    FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n    echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n    \n\n    if lipo -info \"$FRAMEWORK_EXECUTABLE_PATH\" | grep -iq \"Non-fat file\"\n        then\n    echo \"This is a non-fat file, skipping\"\n        continue\n    fi\n    EXTRACTED_ARCHS=()\n\n    for ARCH in $ARCHS\n    do\n        echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n        lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n        EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n    done\n\n    echo \"Merging extracted architectures: ${ARCHS}\"\n    lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n    rm \"${EXTRACTED_ARCHS[@]}\"\n\n    echo \"Replacing original executable with thinned version\"\n    rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n    mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
+		698BFFD826F8A2A10005E852 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrepository_root=$(git rev-parse --show-toplevel)\n\ncarthage_uuid_directory_path=$repository_root/Carthage/dSYMs/UUIDs\ndefaults write com.apple.DebugSymbols DBGFileMappedPaths $carthage_uuid_directory_path\n";
+		};
 		699FF9B926E761D100103607 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,28 +571,49 @@
 			files = (
 				ADA3CE4225C091E600D54A44 /* FruitData.swift in Sources */,
 				699FF9CD26E775CA00103607 /* FruitFeed.swift in Sources */,
+				698BFFDB26F8A35E0005E852 /* Persistable.swift in Sources */,
 				699FF9D126E7779300103607 /* FruitsProvider.swift in Sources */,
+				698BFFF326F8AB360005E852 /* FruitManager.swift in Sources */,
 				AD3BD02F25C0CC4000B69D41 /* SourceLinkView.swift in Sources */,
 				699FF9BE26E7668700103607 /* Scenes.swift in Sources */,
+				698B000D26F8B2AA0005E852 /* RealmSharedCache.swift in Sources */,
 				699FF9C026E7668700103607 /* Segues.swift in Sources */,
 				AD3BD02625C0B9A100B69D41 /* FruitRowView.swift in Sources */,
 				69B5605B26F354CC00721D14 /* SettingsRowView.swift in Sources */,
 				699FF9C426E76F3F00103607 /* FruitInfoView.swift in Sources */,
 				699FF9C926E7755B00103607 /* APIError.swift in Sources */,
+				698BFFE626F8A75E0005E852 /* FruitCache.swift in Sources */,
+				698BFFE326F8A4B10005E852 /* FruitObject.swift in Sources */,
+				698B000926F8B1820005E852 /* DependenciesBuilder.swift in Sources */,
 				AD3BD02925C0C40F00B69D41 /* FruitDetailView.swift in Sources */,
+				698B000726F8B1820005E852 /* Injected.swift in Sources */,
 				ADDFC61325BFA0CB00014D0A /* ContentView.swift in Sources */,
+				698B000A26F8B1820005E852 /* Dependency.swift in Sources */,
+				698BFFF026F8A9BA0005E852 /* QueueExecutableError.swift in Sources */,
+				698BFFBD26F89C1E0005E852 /* WriteTransaction.swift in Sources */,
 				699FF9D326E77A9900103607 /* FruitViewModel.swift in Sources */,
+				69B99F4A26F9C8EC004E91A1 /* Observable.swift in Sources */,
 				699FF9C126E7668700103607 /* Strings.swift in Sources */,
+				698B000F26F8B7910005E852 /* LogManager.swift in Sources */,
 				AD3BD02C25C0C8D100B69D41 /* FruitHeaderView.swift in Sources */,
-				699FF9D826E7827C00103607 /* DefaultCodable.swift in Sources */,
+				698BFFBE26F89C1E0005E852 /* Container.swift in Sources */,
+				698BFFF726F8AD6B0005E852 /* FruitManager+Read.swift in Sources */,
+				698BFFFE26F8B0B20005E852 /* ContentViewData.swift in Sources */,
 				AD90B99925C223D100703D92 /* SettingsLabelView.swift in Sources */,
-				ADA3CE3D25C0910500D54A44 /* FruitModel.swift in Sources */,
+				ADA3CE3D25C0910500D54A44 /* Fruit.swift in Sources */,
+				698BFFE926F8A8A50005E852 /* QueueExecutable.swift in Sources */,
 				699FF9CB26E7757D00103607 /* FruitFeedResult.swift in Sources */,
 				699FF9D526E77C5200103607 /* ImageWithURL.swift in Sources */,
 				ADDFC61125BFA0CB00014D0A /* FructusApp.swift in Sources */,
+				698BFFF526F8AD2D0005E852 /* FruitManager+Write.swift in Sources */,
+				698B000826F8B1820005E852 /* Dependencies.swift in Sources */,
 				699FF9C726E7745700103607 /* FruitClient.swift in Sources */,
+				698BFFFB26F8B05A0005E852 /* ContentViewBusinessLogic.swift in Sources */,
+				698B000B26F8B1820005E852 /* InjectedAlways.swift in Sources */,
 				699FF9BF26E7668700103607 /* Assets-Constants.swift in Sources */,
+				698BFFDE26F8A3890005E852 /* TypeAliases.swift in Sources */,
 				699FF9CF26E7760000103607 /* Endpoint.swift in Sources */,
+				698B000626F8B1820005E852 /* InjectedSafe.swift in Sources */,
 				AD92A56425C1080D004B15E6 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,12 +751,15 @@
 		ADDFC61D25BFA0CD00014D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LE4543WR;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Fruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,12 +776,15 @@
 		ADDFC61E25BFA0CD00014D0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fruits/Preview Content\"";
 				DEVELOPMENT_TEAM = 93LE4543WR;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Fruits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

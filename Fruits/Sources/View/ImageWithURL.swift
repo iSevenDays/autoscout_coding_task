@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import CocoaLumberjackSwift
 // The class purpose is to replace SwiftUI Image class to support showing both local and remote images. Remote images will be cached
 struct ImageWithURL: View {
 	
@@ -37,8 +37,7 @@ class ImageLoaderAndCache: ObservableObject {
 		let cache = URLCache.shared
 		let request = URLRequest(url: URL(string: imageURL)!, cachePolicy: URLRequest.CachePolicy.returnCacheDataElseLoad, timeoutInterval: 30.0)
 		if let data = cache.cachedResponse(for: request)?.data {
-			// Anton Sokolchenko: for logging I would use CocoaLumberjackSwift
-			print("Got image from cache for url: \(imageURL)")
+			DDLogDebug("Got image from cache for url: \(imageURL)")
 			self.imageData = data
 		} else {
 			URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
@@ -46,8 +45,7 @@ class ImageLoaderAndCache: ObservableObject {
 				let cachedData = CachedURLResponse(response: response, data: data)
 									cache.storeCachedResponse(cachedData, for: request)
 					DispatchQueue.main.async {
-						// Anton Sokolchenko: for logging I would use CocoaLumberjackSwift
-						print("downloaded from internet \(imageURL)")
+						DDLogDebug("downloaded from internet \(imageURL)")
 						self.imageData = data
 					}
 				}

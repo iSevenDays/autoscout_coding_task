@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct FruitsApp: App {
+	// DependenciesBuilder must be initialized before any injected dependencies are being used
+	let dependencyBuilder = DependenciesBuilder()
+	
+	@InjectedAlways
+	private var contentViewBusinessLogic: ContentViewBusinessLogic
 	
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+			ContentView(contentViewData: contentViewBusinessLogic.contentViewData)
 		}
 	}
 }
