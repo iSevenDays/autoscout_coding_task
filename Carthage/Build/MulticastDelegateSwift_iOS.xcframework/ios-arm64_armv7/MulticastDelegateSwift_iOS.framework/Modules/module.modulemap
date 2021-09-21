@@ -1,0 +1,11 @@
+framework module MulticastDelegateSwift_iOS {
+  umbrella header "MulticastDelegateSwift_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module MulticastDelegateSwift_iOS.Swift {
+    header "MulticastDelegateSwift_iOS-Swift.h"
+    requires objc
+}

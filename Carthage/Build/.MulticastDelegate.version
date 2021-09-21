@@ -1,0 +1,19 @@
+{
+  "commitish" : "2.1.6",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)",
+      "hash" : "64c7118bda0308c4ea1fcc38f8117f01f5f4a14c1f2fa3a3b0571e0fd71bdbe3",
+      "name" : "MulticastDelegateSwift_iOS",
+      "container" : "MulticastDelegateSwift_iOS.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)",
+      "hash" : "cb845072ca6b80e77f160d73a7ddfc016722177bfee7e75c945ae30c3be2d14f",
+      "name" : "MulticastDelegateSwift_iOS",
+      "container" : "MulticastDelegateSwift_iOS.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    }
+  ]
+}

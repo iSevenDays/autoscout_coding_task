@@ -1,0 +1,19 @@
+{
+  "commitish" : "1.5.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)",
+      "hash" : "fc2173dfdaf4240ba996c71f04cf4c31cfe02993926d9ce488b24b3826c3da4f",
+      "name" : "BoltsSwift",
+      "container" : "BoltsSwift.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)",
+      "hash" : "71c080e0e0b039426b35fa2c5b1336636aa429264c70633f2dc8a564d7d43733",
+      "name" : "BoltsSwift",
+      "container" : "BoltsSwift.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}
