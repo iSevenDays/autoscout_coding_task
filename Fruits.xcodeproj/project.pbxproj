@@ -57,6 +57,7 @@
 		69A4AD1A26FC67E6001994FB /* FruitCache+Write.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4AD1926FC67E6001994FB /* FruitCache+Write.swift */; };
 		69A4AD1C26FC67EC001994FB /* FruitCache+Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4AD1B26FC67EC001994FB /* FruitCache+Read.swift */; };
 		69A4AD2026FC68E3001994FB /* ContentViewBusinessLogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4AD1F26FC68E3001994FB /* ContentViewBusinessLogicProtocol.swift */; };
+		69A4AD2626FC8451001994FB /* CombineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4AD2526FC8451001994FB /* CombineAPI.swift */; };
 		69B5605B26F354CC00721D14 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5605926F354A400721D14 /* SettingsRowView.swift */; };
 		69B99F4626F9C330004E91A1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B99F4526F9C330004E91A1 /* libc++.tbd */; };
 		69B99F4826F9C340004E91A1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B99F4726F9C340004E91A1 /* libz.tbd */; };
@@ -140,6 +141,7 @@
 		69A4AD1926FC67E6001994FB /* FruitCache+Write.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitCache+Write.swift"; sourceTree = "<group>"; };
 		69A4AD1B26FC67EC001994FB /* FruitCache+Read.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FruitCache+Read.swift"; sourceTree = "<group>"; };
 		69A4AD1F26FC68E3001994FB /* ContentViewBusinessLogicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewBusinessLogicProtocol.swift; sourceTree = "<group>"; };
+		69A4AD2526FC8451001994FB /* CombineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAPI.swift; sourceTree = "<group>"; };
 		69B5605926F354A400721D14 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		69B99F4526F9C330004E91A1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		69B99F4726F9C340004E91A1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -224,6 +226,7 @@
 			children = (
 				69B99F4926F9C8EC004E91A1 /* Observable.swift */,
 				698BFFDA26F8A35E0005E852 /* Persistable.swift */,
+				69A4AD2526FC8451001994FB /* CombineAPI.swift */,
 			);
 			path = GeneralProtocols;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				698BFFE626F8A75E0005E852 /* FruitCache.swift in Sources */,
 				698BFFE326F8A4B10005E852 /* FruitObject.swift in Sources */,
 				698B000926F8B1820005E852 /* DependenciesBuilder.swift in Sources */,
+				69A4AD2626FC8451001994FB /* CombineAPI.swift in Sources */,
 				AD3BD02925C0C40F00B69D41 /* FruitDetailView.swift in Sources */,
 				698B000726F8B1820005E852 /* Injected.swift in Sources */,
 				ADDFC61325BFA0CB00014D0A /* ContentView.swift in Sources */,
