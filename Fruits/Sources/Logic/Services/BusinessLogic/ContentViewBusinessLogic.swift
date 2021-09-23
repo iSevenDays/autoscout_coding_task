@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import Combine
+import CocoaLumberjackSwift
 
 /// The class is responsible for managing ContentView data (displaying of fruits)
 class ContentViewBusinessLogic: ContentViewBusinessLogicProtocol {
 	private(set) var contentViewData = ContentViewData()
 	@InjectedSafe
 	private var fruitManager: FruitManager
+	
+	// MARK:- Subscribers
+	private var cancellable: AnyCancellable?
 	
 	/// Uses local data for UI representation of Fruits.
 	private var useLocalData = false
@@ -27,17 +32,23 @@ class ContentViewBusinessLogic: ContentViewBusinessLogicProtocol {
 	
 	/// Loads  fruits from local data or from fruitManager
 	private func reloadFruits() {
-		if useLocalData {
-			self.contentViewData.fruits = fruitsDataViewModels
-		} else {
-			fruitManager.getFruits { [weak self] fruits in
-				self?.contentViewData.fruits = fruits.compactMap({FruitViewModel(fruit: $0)})
+		cancellable?.cancel()
+		cancellable = Future<[FruitViewModel], Never> { [weak self] promise in
+			guard let self = self else { return }
+			if self.useLocalData {
+				promise(.success(fruitsDataViewModels))
+			} else {
+				self.fruitManager.getFruits { fruits in
+					promise(.success(fruits.compactMap({FruitViewModel(fruit: $0)})))
+				}
 			}
 		}
+		.receive(on: RunLoop.main)
+		.assign(to: \.fruits, on: contentViewData)
 	}
 }
 extension ContentViewBusinessLogic: FruitManagerObserver {
-	func fruitManager(_: FruitManager, didCacheFruits fruits: [Fruit]) {
+	func fruitManager(_ fruitManager: FruitManager, didCacheFruits fruits: [Fruit]) {
 		guard !useLocalData else { return }
 		reloadFruits()
 	}

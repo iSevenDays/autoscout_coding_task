@@ -10,7 +10,7 @@ import MulticastDelegateSwift_iOS
 import CocoaLumberjackSwift
 
 protocol FruitManagerObserver {
-	func fruitManager(_: FruitManager, didCacheFruits: [Fruit])
+	func fruitManager(_ fruitManager: FruitManager, didCacheFruits: [Fruit])
 }
 
 // Usually the service should contain both read and write operations, because some of the operations should be running on the same queue for synchronization purposes
