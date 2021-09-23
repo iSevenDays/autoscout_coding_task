@@ -28,7 +28,7 @@ public final class WriteTransaction {
 		DDLogDebug("Will cache \(values.count) items of type \(T.self)")
 		realm.add(values.compactMap({$0.managedObject()}), update: .all)
 	}
-
+	
 	public func remove<T: Persistable & PrimaryKeySupportable>(_ value: T, cascadingDelete: Bool = false) {
 		guard let object = realm.object(ofType: T.ManagedObject.self, forPrimaryKey: value.primaryKey) else {
 			DDLogError("Couldn't find object to remove of type \(T.ManagedObject.self) for primaryKey: \(value.primaryKey)")
@@ -42,7 +42,7 @@ public final class WriteTransaction {
 			realm.delete(object)
 		}
 	}
-
+	
 	/// Remove Realm objects with optional transation verification
 	/// - Parameters:
 	///   - value: Realm Object
@@ -67,5 +67,5 @@ public final class WriteTransaction {
 			realm.delete(value)
 		}
 	}
-
+	
 }

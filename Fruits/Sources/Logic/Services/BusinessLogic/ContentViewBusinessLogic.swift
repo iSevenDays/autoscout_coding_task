@@ -8,7 +8,7 @@
 import Foundation
 
 /// The class is responsible for managing ContentView data (displaying of fruits)
-class ContentViewBusinessLogic {
+class ContentViewBusinessLogic: ContentViewBusinessLogicProtocol {
 	private(set) var contentViewData = ContentViewData()
 	@InjectedSafe
 	private var fruitManager: FruitManager

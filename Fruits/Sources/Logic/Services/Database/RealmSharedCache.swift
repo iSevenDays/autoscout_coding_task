@@ -10,8 +10,7 @@ import RealmSwift
 
 /// The class provides a shared realm cache for services
 class RealmSharedCache {
-	static let shared = RealmSharedCache()
-
+	
 	private func realmMigrationSupportConfiguration() -> Realm.Configuration {
 		// Update version if new properties are added to Realm
 		let config = Realm.Configuration(schemaVersion: 0) { (migration, oldSchemaVersion) in

@@ -12,9 +12,9 @@ import Foundation
 // Use this by default for Services, they usually have reference to one another.
 @propertyWrapper
 struct InjectedSafe<Dependency> {
-
+	
 	var dependency: Dependency! // Resolved dependency
-
+	
 	var wrappedValue: Dependency {
 		mutating get {
 			if dependency == nil {

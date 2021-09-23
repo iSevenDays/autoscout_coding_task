@@ -19,6 +19,7 @@ struct Fruit: Identifiable, Decodable {
 	var weight: Float?
 }
 
+/// Persistable protocol conformance - convert from Realm Object -> Swift Struct and back
 extension Fruit: Persistable {
 	public init(managedObject: FruitObject) {
 		name = managedObject.name
@@ -38,7 +39,7 @@ extension Fruit: Persistable {
 }
 
 extension Fruit: Equatable {
-
+	
 }
 
 extension Fruit: CustomStringConvertible {

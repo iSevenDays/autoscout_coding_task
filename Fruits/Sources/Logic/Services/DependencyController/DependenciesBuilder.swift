@@ -14,10 +14,6 @@ class DependenciesBuilder {
 	
 	static let shared = DependenciesBuilder()
 	
-	internal var unitTestsMode: Bool {
-		return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
-	}
-	
 	init() {
 		initializeDefaultDependencies()
 	}
@@ -35,7 +31,7 @@ class DependenciesBuilder {
 	///   - dependencies: additional dependencies for unit tests
 	func initializeDefaultDependencies(additionalDependenciesIntializationOrder: AdditionalDependenciesInitializationOrder = .last, withAdditionaDependencies dependencies: Dependency...) {
 		
-		let cacheBlock = RealmSharedCache.shared.realmCacheBlock()
+		let cacheBlock = RealmSharedCache().realmCacheBlock()
 		Dependencies.shared = getDependencies(cacheBlock: cacheBlock)
 		
 		var index = 0
@@ -61,6 +57,7 @@ class DependenciesBuilder {
 		return Dependencies {
 			Dependency { LogManager() }
 			Dependency { FruitCache(cacheBlock: cacheBlock) }
+			Dependency { FruitClient() }
 			Dependency { FruitsProvider() }
 			Dependency { FruitManager()}
 			Dependency { ContentViewBusinessLogic() }

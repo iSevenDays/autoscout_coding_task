@@ -11,14 +11,14 @@ import Foundation
 // Injected - the property value is initialized immediately and should be used by default in  SwiftUI classes
 @propertyWrapper
 struct Injected<Dependency> {
-
+	
 	var dependency: Dependency! // Resolved dependency
-
+	
 	init() {
 		let copy: Dependency = Dependencies.shared.resolve()
 		self.dependency = copy // Keep copy
 	}
-
+	
 	var wrappedValue: Dependency {
 		get {
 			return dependency

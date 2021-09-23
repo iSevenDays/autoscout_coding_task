@@ -13,12 +13,12 @@ struct ImageWithURL: View {
 	
 	@ObservedObject var imageLoader: ImageLoaderAndCache
 	private var url: String
-
+	
 	init(_ url: String) {
 		imageLoader = ImageLoaderAndCache(imageURL: url)
 		self.url = url
 	}
-
+	
 	var body: some View {
 		// in iOS 15 , SwiftUI has a dedicated AsyncImage, but let's support Xcode 12
 		// we support both local and remote image URLs
@@ -42,8 +42,8 @@ class ImageLoaderAndCache: ObservableObject {
 		} else {
 			URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
 				if let data = data, let response = response {
-				let cachedData = CachedURLResponse(response: response, data: data)
-									cache.storeCachedResponse(cachedData, for: request)
+					let cachedData = CachedURLResponse(response: response, data: data)
+					cache.storeCachedResponse(cachedData, for: request)
 					DispatchQueue.main.async {
 						DDLogDebug("downloaded from internet \(imageURL)")
 						self.imageData = data

@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct SettingsView: View {
-	// MARK: - PROPERTIES
 	
 	@Environment(\.presentationMode) var presentationMode
-	
-	// MARK: - BODY
 	
 	var body: some View {
 		NavigationView {
 			ScrollView(.vertical, showsIndicators: false) {
 				VStack(spacing: 20) {
-					// MARK: - SECTION 1
 					GroupBox(label:
 										SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
 					) {

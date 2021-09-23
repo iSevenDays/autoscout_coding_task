@@ -12,9 +12,9 @@ final class FruitObject: Object, Decodable {
 	@objc dynamic var name: String = ""
 	@objc dynamic var image: String = ""
 	@objc dynamic var price: Int = 0
-
+	
 	var weight = RealmOptional<Float>()
-
+	
 	override static func primaryKey() -> String? {
 		return "name"
 	}

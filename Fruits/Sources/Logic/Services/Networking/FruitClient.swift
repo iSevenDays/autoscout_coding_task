@@ -13,10 +13,8 @@ import Combine
 /// For this example, I implemented Combine API client. Both methods are fine if they have the same results.
 class FruitClient: CombineAPI {
 	
-	// 1
 	let session: URLSession
 	
-	// 2
 	init(configuration: URLSessionConfiguration) {
 		self.session = URLSession(configuration: configuration)
 	}
@@ -25,7 +23,6 @@ class FruitClient: CombineAPI {
 		self.init(configuration: .default)
 	}
 	
-	// 3
 	func getFeed(_ feedKind: FruitFeed) -> AnyPublisher<FruitFeedResult, Error> {
 		execute(feedKind.request, decodingType: FruitFeedResult.self, retries: 2)
 	}

@@ -11,13 +11,9 @@ import SwiftUI
 /// The class purpose is to display main view of the application
 struct ContentView: View {
 	
-	// MARK: - PROPERTIES
-	
 	@State private var isShowingSettings: Bool = false
 	
 	@ObservedObject var contentViewData: ContentViewData
-	
-	// MARK: - BODY
 	
 	var body: some View {
 		NavigationView {

@@ -16,7 +16,7 @@ import MulticastDelegateSwift_iOS
 protocol Observable {
 	associatedtype ObserverProtocol
 	var observers: MulticastDelegate<ObserverProtocol> { get }
-
+	
 	func addObserver(observer: ObserverProtocol)
 }
 

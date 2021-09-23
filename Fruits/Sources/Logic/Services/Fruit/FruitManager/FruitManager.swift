@@ -28,7 +28,7 @@ class FruitManager: Observable, QueueExecutable {
 	private(set) var observers = MulticastDelegate<FruitManagerObserver>()
 	@InjectedSafe
 	internal var cache: FruitCache
-
+	
 	init() {
 		self.queue = DispatchQueue(label: queueLabel, qos: queueQoS, attributes: .concurrent, autoreleaseFrequency: DispatchQueue.AutoreleaseFrequency.inherit, target: nil)
 	}

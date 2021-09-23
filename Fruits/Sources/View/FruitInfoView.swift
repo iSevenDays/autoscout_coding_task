@@ -11,11 +11,9 @@ import SwiftUI
 
 /// The class purpose is to display fruit details like price, weight
 struct FruitInfoView: View {
-	// MARK: - PROPERTIES
 	
 	var fruit: FruitViewModel
 	
-	// MARK: - BODY
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8) {
 			Text(fruit.price)

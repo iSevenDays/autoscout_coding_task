@@ -16,7 +16,8 @@ final class FruitsProvider: ObservableObject {
 	private var cancellable: AnyCancellable?
 	
 	// MARK:- Private properties
-	private let client = FruitClient()
+	@InjectedSafe
+	private var client: FruitClient
 	
 	@InjectedSafe
 	private var fruitManager: FruitManager

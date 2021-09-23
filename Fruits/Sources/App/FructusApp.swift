@@ -13,7 +13,7 @@ struct FruitsApp: App {
 	let dependencyBuilder = DependenciesBuilder()
 	
 	@InjectedAlways
-	private var contentViewBusinessLogic: ContentViewBusinessLogic
+	private var contentViewBusinessLogic: ContentViewBusinessLogicProtocol
 	
 	var body: some Scene {
 		WindowGroup {

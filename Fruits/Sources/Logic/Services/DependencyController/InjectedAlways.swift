@@ -13,9 +13,9 @@ import Foundation
 // Use this by default for AppDelegate/SceneDelegate. In case services are restarted, they will use the latest service instance.
 @propertyWrapper
 struct InjectedAlways<Dependency> {
-
+	
 	var wrappedValue: Dependency {
-
+		
 		let copy: Dependency = Dependencies.shared.resolve()
 		return copy // Never keep copy
 	}

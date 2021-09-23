@@ -20,6 +20,8 @@ struct SourceLinkView: View {
     }
 }
 
+// MARK: = PREVIEW
+
 struct SourceLinkView_Previews: PreviewProvider {
     static var previews: some View {
         SourceLinkView()
